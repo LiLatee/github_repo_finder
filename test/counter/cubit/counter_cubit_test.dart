@@ -1,7 +1,7 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:starting_flutter_project/counter/counter.dart';
+import 'package:github_repo_finder/counter/counter.dart';
 
 void main() {
   group('CounterCubit', () {

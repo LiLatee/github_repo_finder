@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'package:starting_flutter_project/counter/counter.dart';
+import 'package:github_repo_finder/counter/counter.dart';
 
 import '../../helpers/golden_test_runner.dart';
 import '../../helpers/helpers.dart';
@@ -38,8 +38,7 @@ void main() {
       expect(find.text('$state'), findsOneWidget);
     });
 
-    testWidgets('calls increment when increment button is tapped',
-        (tester) async {
+    testWidgets('calls increment when increment button is tapped', (tester) async {
       when(() => counterCubit.state).thenReturn(0);
       when(() => counterCubit.increment()).thenReturn(null);
       await tester.pumpApp(
@@ -52,8 +51,7 @@ void main() {
       verify(() => counterCubit.increment()).called(1);
     });
 
-    testWidgets('calls decrement when decrement button is tapped',
-        (tester) async {
+    testWidgets('calls decrement when decrement button is tapped', (tester) async {
       when(() => counterCubit.state).thenReturn(0);
       when(() => counterCubit.decrement()).thenReturn(null);
       await tester.pumpApp(

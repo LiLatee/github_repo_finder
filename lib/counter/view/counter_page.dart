@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:starting_flutter_project/core/envs/env.dart';
-import 'package:starting_flutter_project/counter/counter.dart';
-import 'package:starting_flutter_project/l10n/l10n.dart';
+import 'package:github_repo_finder/core/envs/env.dart';
+import 'package:github_repo_finder/counter/counter.dart';
+import 'package:github_repo_finder/l10n/l10n.dart';
 
 class CounterPage extends StatelessWidget {
   const CounterPage({super.key});

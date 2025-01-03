@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(starting_flutter_project LANGUAGES CXX)
+project(github_repo_finder LANGUAGES CXX)
 
-set(BINARY_NAME "starting_flutter_project")
+set(BINARY_NAME "github_repo_finder")
 
 cmake_policy(SET CMP0063 NEW)
 

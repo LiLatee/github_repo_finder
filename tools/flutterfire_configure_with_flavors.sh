@@ -4,9 +4,9 @@
 
 # The name of created project on Firebase. It has to be created manually.
 # https://console.firebase.google.com/
-projectName=starting-flutter-project
-iosPackageName=com.lilatee.starting-flutter-project
-androidPackageName=com.lilatee.starting_flutter_project
+projectName=github-repo-finder
+iosPackageName=com.lilatee.github-repo-finder
+androidPackageName=com.lilatee.github_repo_finder
 
 
 if [[ $# -eq 0 ]]; then

@@ -1,4 +1,4 @@
-package com.lilatee.starting_flutter_project
+package com.lilatee.github_repo_finder
 
 import io.flutter.embedding.android.FlutterActivity
 

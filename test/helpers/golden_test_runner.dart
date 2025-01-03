@@ -5,7 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:golden_test/golden_test.dart';
 import 'package:meta/meta.dart';
-import 'package:starting_flutter_project/l10n/l10n.dart';
+import 'package:github_repo_finder/l10n/l10n.dart';
 
 @isTest
 Future<void> runGoldenTest(
