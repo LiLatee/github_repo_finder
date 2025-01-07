@@ -1,7 +1,19 @@
 {
-    "@@locale": "pl",
-    "counterAppBarTitle": "Licznik",
-    "@counterAppBarTitle": {
-        "description": "Tekst wyświetlany w AppBarze ekranu CounterPage."
-    }
+  "@@locale": "pl",
+  "@counterAppBarTitle": {
+    "description": "Tekst wyświetlany w AppBarze ekranu CounterPage."
+  },
+  "counterAppBarTitle": "Licznik",
+  "genericEmptyList": "Nie ma czego tu jeszcze szukać.",
+  "genericOupsSomethingWentWrong": "Ups... coś poszło nie tak.",
+  "genericTryAgain": "Spróbuj ponownie",
+  "repositoriesPage403Error": "Błąd 403. Prawdopodobnie przekroczyłeś limit GitHub API.",
+  "repositoriesPageNoResults": "Brak wyników wyszukiwania dla \"{query}\".",
+  "repositoriesPageSearchHint": "Szukaj repozytorium...",
+  "repositoriesPageTitle": "Repozytoria",
+  "repositoryDetailsPagePullRequests": "Żadania scalenia",
+  "repositoryForks": "forks",
+  "repositoryStars": "obserwacje",
+  "tabGraphqlApi": "GraphQL",
+  "tabRestApi": "REST"
 }

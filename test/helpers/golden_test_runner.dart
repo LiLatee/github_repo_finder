@@ -11,6 +11,7 @@ import 'package:github_repo_finder/l10n/l10n.dart';
 Future<void> runGoldenTest(
   Object name, {
   required Widget Function(BuildContext context) builder,
+  Future<void> Function(WidgetTester tester)? action,
   String? path,
   bool? skip,
 }) async {
@@ -22,6 +23,7 @@ Future<void> runGoldenTest(
   goldenTest(
     name: name.toString(),
     skip: skip ?? false,
+    action: action,
     localizationsDelegates: const [
       AppLocalizations.delegate,
       GlobalMaterialLocalizations.delegate,

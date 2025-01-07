@@ -1,12 +1,16 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:github_repo_finder/core/dependencies.dart';
+import 'package:github_repo_finder/core/tests_manager.dart';
 import 'package:golden_test/golden_test.dart';
 import 'package:golden_toolkit/golden_toolkit.dart' as golden_toolkit;
 import 'package:intl/intl.dart';
 
 Future<void> testExecutable(FutureOr<void> Function() testMain) async {
   TestWidgetsFlutterBinding.ensureInitialized();
+
+  sl.registerLazySingleton(TestsManager.new);
 
   // Fixes fonts and Icons on goldens.
   await golden_toolkit.loadAppFonts();

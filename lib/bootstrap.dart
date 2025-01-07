@@ -4,6 +4,7 @@ import 'dart:developer';
 import 'package:bloc/bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/widgets.dart';
+import 'package:github_repo_finder/core/dependencies.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();
@@ -11,7 +12,7 @@ class AppBlocObserver extends BlocObserver {
   @override
   void onChange(BlocBase<dynamic> bloc, Change<dynamic> change) {
     super.onChange(bloc, change);
-    log('onChange(${bloc.runtimeType}, $change)');
+    log('onChange(${bloc.runtimeType}, ${change.currentState.runtimeType}->${change.nextState.runtimeType})');
   }
 
   @override
@@ -33,7 +34,8 @@ Future<void> bootstrap(
 
   // Add cross-flavor configuration here
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: firebaseOptions);
+  final FirebaseApp firebaseApp = await Firebase.initializeApp(options: firebaseOptions);
+  await setupDependencies(firebaseApp: firebaseApp);
 
   runApp(await builder());
 }

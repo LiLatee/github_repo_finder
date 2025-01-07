@@ -5,12 +5,20 @@ publish_to: none
 
 environment:
   sdk: ^3.5.0
-  flutter: 3.24.4
+  flutter: 3.27.1
 
 dependencies:
   bloc: ^8.1.4
+  cached_network_image: ^3.4.1
+  chopper: ^8.0.3
+  cronet_http: ^1.3.2
+  cupertino_http: ^2.0.1
+  either_dart: ^1.0.0
   envied: ^1.0.0
+  equatable: ^2.0.7
+  firebase_analytics: ^11.3.6
   firebase_core: ^3.9.0
+  firebase_crashlytics: ^4.2.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.6
@@ -21,14 +29,23 @@ dependencies:
       url: https://github.com/LiLatee/flutter_config_plus/
   flutter_localizations:
     sdk: flutter
+  gap: ^3.0.1
+  get_it: ^8.0.3
   go_router: ^14.6.2
   golden_toolkit: ^0.15.0
   intl: ^0.19.0
+  json_annotation: ^4.9.0
+  json_serializable: ^6.9.0
   meta: ^1.15.0
+  retry: ^3.1.2
+  rxdart: ^0.28.0
+  timeago: ^3.7.0
+  url_launcher: ^6.3.1
 
 dev_dependencies:
   bloc_test: ^9.1.7
   build_runner: ^2.4.13
+  chopper_generator: ^8.0.3
   custom_lint: ^0.7.0
   dart_code_linter: ^1.1.3
   envied_generator: ^1.0.0
@@ -41,6 +58,9 @@ dev_dependencies:
   leancode_lint: ^14.3.0
   mocktail: ^1.0.4
   very_good_analysis: ^6.0.0
+
+dependency_overrides:
+  analyzer: ^6.6.0
 
 flutter:
   uses-material-design: true
