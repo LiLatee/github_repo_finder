@@ -42,7 +42,7 @@ class SliverPullRequestsList extends StatelessWidget {
               ),
             );
           case GetPullRequestsCubitDataState():
-            return _Data(
+            return _SliverData(
               state: state,
               ownerName: ownerName,
               repoName: repoName,
@@ -53,8 +53,8 @@ class SliverPullRequestsList extends StatelessWidget {
   }
 }
 
-class _Data extends StatelessWidget {
-  const _Data({
+class _SliverData extends StatelessWidget {
+  const _SliverData({
     required this.state,
     required this.ownerName,
     required this.repoName,

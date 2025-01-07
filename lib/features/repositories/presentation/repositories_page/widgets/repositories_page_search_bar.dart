@@ -21,27 +21,23 @@ class SliverRepositoriesPageSearchBar extends StatelessWidget {
         titlePadding: EdgeInsets.only(top: MediaQuery.viewPaddingOf(context).top),
         title: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: Column(
-            children: [
-              Container(
-                height: 56,
-                child: TextField(
-                  controller: textEditingController,
-                  onChanged: (query) => context.read<SearchRepositoriesCubit>().search(query),
-                  decoration: InputDecoration(
-                    hintText: context.l10n.repositoriesPageSearchHint,
-                    prefixIcon: const Icon(Icons.search),
-                    suffixIcon: IconButton(
-                      onPressed: () {
-                        context.read<SearchRepositoriesCubit>().search('');
-                        textEditingController.clear();
-                      },
-                      icon: const Icon(Icons.clear),
-                    ),
-                  ),
+          child: Container(
+            height: 56,
+            child: TextField(
+              controller: textEditingController,
+              onChanged: (query) => context.read<SearchRepositoriesCubit>().search(query),
+              decoration: InputDecoration(
+                hintText: context.l10n.repositoriesPageSearchHint,
+                prefixIcon: const Icon(Icons.search),
+                suffixIcon: IconButton(
+                  onPressed: () {
+                    context.read<SearchRepositoriesCubit>().search('');
+                    textEditingController.clear();
+                  },
+                  icon: const Icon(Icons.clear),
                 ),
               ),
-            ],
+            ),
           ),
         ),
       ),

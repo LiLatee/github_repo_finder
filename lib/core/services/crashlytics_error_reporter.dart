@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
-import 'package:github_repo_finder/core/dependencies.dart';
 
 class CrashlyticsErrorReporter {
   Future<dynamic> initReporter() async {
@@ -48,15 +47,4 @@ class CrashlyticsErrorReporter {
       debugPrintThrottled('\x1B[31m$text\x1B[0m', wrapWidth: 120);
     }
   }
-}
-
-/// In order to make it useful during development (in debug mode) remember to:
-/// - in [CrashlyticsErrorReporter] set it to true [await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);];
-/// - in [CrashlyticsErrorReporter] in [logException] and [_reportFlutterError] change `if(kReleaseMode) => if(true)`
-Future<void> testFirebaseCrashlytics() async {
-  await sl<CrashlyticsErrorReporter>()
-      .logException(exception: Exception('Test: non-fatal'), stackTrace: StackTrace.current);
-  await FirebaseCrashlytics.instance
-      .recordFlutterError(FlutterErrorDetails(exception: Exception('Test: fatal')), fatal: true);
-  FirebaseCrashlytics.instance.crash();
 }
