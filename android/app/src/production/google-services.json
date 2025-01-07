@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "214151188813",
+    "project_id": "github-repo-finder-prod",
+    "storage_bucket": "github-repo-finder-prod.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214151188813:android:7fab7aeac907a514cba704",
+        "android_client_info": {
+          "package_name": "com.lilatee.github_repo_finder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOCCVobKsNVAm99eCKYeqyeLoo0fmZrqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
