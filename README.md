@@ -5,12 +5,12 @@ API based on: https://docs.github.com/en/rest/quickstart?apiVersion=2022-11-28
 
 Tools used by that project are defined in `.tools-version` file.
 
-APK to download the app:
+Debug APK to download the app: https://github.com/LiLatee/github_repo_finder/blob/master/app-production-debug.apk
 
 Project uses:
 - Firebase for ErrorReporting,
 - unit tests with [mocktail](https://pub.dev/packages/mocktail),
-- golden tests with [golden_test](https://pub.dev/packages/golden_test) package. Goldens can be found here:
+- golden tests with [golden_test](https://pub.dev/packages/golden_test) package. Some example Goldens can be found here: https://github.com/LiLatee/github_repo_finder/tree/master/test/features/repositories/presentation/repositories_page/goldens/en
 - routing handled by [go_router](https://pub.dev/packages/go_router),
 - Polish and English languages,
 - dark and light mode,
